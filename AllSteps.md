@@ -42,4 +42,8 @@ folder structure
 
 10. add faq form below accordian.
 11. now preparation for route. so making contacts directory and add all routes name in that directory.
-12. import * as ROUTES 
+12. import * as ROUTES  and alway use that name rather giving static name.
+13. make header component. header section contain 2 main things, first is header and anoter is feathers section, which contain same section of faq form.
+
+14. home page finished.
+15. 
