@@ -39,3 +39,7 @@ folder structure
     ```
 8. Here for hide and show we require state, and also to send data into other we also take help of useContext. for this check code for this.
 9. in onClick={() => setToggleShow(!toggleShow)} call like this. instead of direct onClick={setToggleShow(!toggleShow)}. because it create infinte loop.
+
+10. add faq form below accordian.
+11. now preparation for route. so making contacts directory and add all routes name in that directory.
+12. import * as ROUTES 
