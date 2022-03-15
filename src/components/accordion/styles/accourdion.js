@@ -13,6 +13,7 @@ export const Frame = styled.div`
   margin: auto;
   list-style: none;
   padding-left: 0;
+  margin-bottom: 50px;
 `;
 
 export const Title = styled.h2`
