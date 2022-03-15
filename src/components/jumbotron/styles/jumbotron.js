@@ -22,13 +22,12 @@ export const Inner = styled.div`
   }
 `;
 
-export const Container = styled.div``;
 export const Pane = styled.div`
   width: 50%;
 
   @media (max-width: 1000px) {
     width: 100%;
-    padding: 0 45px;
+    padding: 0 35px;
     text-align: center;
   }
 `;
@@ -38,7 +37,7 @@ export const Title = styled.h1`
   margin-bottom: 8px;
 
   @media (max-width: 600px) {
-    font-size: 35px;
+    font-size: 30px;
   }
 `;
 export const Subtitle = styled.h2`
@@ -53,4 +52,12 @@ export const Subtitle = styled.h2`
 export const Image = styled.img`
   max-width: 100%;
   height: auto;
+`;
+
+export const Container = styled.div`
+  @media (max-width: 1000px) {
+    ${Item}:last-of-type h2 {
+      margin-bottom: 50px;
+    }
+  }
 `;
