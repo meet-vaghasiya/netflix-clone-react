@@ -46,4 +46,9 @@ folder structure
 13. make header component. header section contain 2 main things, first is header and anoter is feathers section, which contain same section of faq form.
 
 14. home page finished.
-15. 
+15. make firebase config file. and make firebase context which wrap the App component. also making the context of firebase.add data using seeder.
+16.  make login page. in that use common from html element. 
+17. start signup page. if we need to add data in firebase during signup like username , than we need to update data. after signup request done.
+18. make error, emila, password state for all.  form is submiited, if there is no error , and error message wil shown to user which get back by firebase.
+19. before submitting and after success response from api,  form data should be empty.
+20. useHistory will not working ,  so redirecting using useNavigate() function.

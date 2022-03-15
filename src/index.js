@@ -6,10 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 import "normalize.css";
 import { GlobalStyles } from "./global-style";
 import { firebase } from "./lib/firebase.prod";
+import { FirebaseContext } from "./context/firebase";
 
 ReactDOM.render(
   <>
-    <GlobalStyles></GlobalStyles> <App />
+    <FirebaseContext.Provider value={{ firebase }}>
+      <GlobalStyles></GlobalStyles> <App />
+    </FirebaseContext.Provider>
   </>,
   document.getElementById("root")
 );

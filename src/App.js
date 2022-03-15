@@ -1,7 +1,7 @@
 import "./App.css";
 import * as ROUTE from "./constants/route";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Login, Signup, Browse } from "./pages";
+import { Home, SignIn, SignUp, Browse } from "./pages";
 
 function App() {
   return (
@@ -9,8 +9,8 @@ function App() {
       <Routes>
         <Route exact path={ROUTE.HOME} element={<Home />}></Route>
         <Route exact path={ROUTE.BROWSE} element={<Browse />}></Route>
-        <Route exact path={ROUTE.SIGN_IN} element={<Login />}></Route>
-        <Route exact path={ROUTE.SIGN_UP} element={<Signup />}></Route>
+        <Route exact path={ROUTE.SIGN_IN} element={<SignIn />}></Route>
+        <Route exact path={ROUTE.SIGN_UP} element={<SignUp />}></Route>
       </Routes>
     </BrowserRouter>
   );
