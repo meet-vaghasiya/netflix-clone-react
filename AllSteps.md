@@ -55,3 +55,7 @@ folder structure
 21. make route protected. useHistory is not working in react-router-dom 6 version . so change through  NavigationComponent .
 22. how to pass data in NavigationComponent is still not working. so please check what's the problem. because we need to when user goto /browser and if is not authenticated than we need to send back in login page with location data. so we can pass that and push in /browse path after login.
 23. make authChangeListner which see the changes of login and logout state , which set localstorage. so protected router.
+23. fetch series and filems from firebase data base. and make them converts in objects which title is key of object. using utilities function.
+24.  start working on browse page. when use first user account will be show. and when click on that accoutn, user is redirected to all data on browser page
+25. loading when click on profile is not working. RealiseBody component directly works, so solve and understan this problem. i think it's realted to closure related.
+26. we made another loading component which used in loading. we give scroll body to hidden and also add one more component for and show and hide component based on loading state.
