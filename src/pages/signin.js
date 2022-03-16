@@ -6,7 +6,7 @@ import HeaderContainer from "../containers/Header";
 import { FooterContainer } from "../containers/Footer";
 import * as ROUTES from "../constants/route";
 
-export default function SignIn() {
+export default function SignIn(props) {
   const navigate = useNavigate();
   const { firebase } = useContext(FirebaseContext);
 

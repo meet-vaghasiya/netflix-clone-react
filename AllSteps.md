@@ -52,3 +52,6 @@ folder structure
 18. make error, emila, password state for all.  form is submiited, if there is no error , and error message wil shown to user which get back by firebase.
 19. before submitting and after success response from api,  form data should be empty.
 20. useHistory will not working ,  so redirecting using useNavigate() function.
+21. make route protected. useHistory is not working in react-router-dom 6 version . so change through  NavigationComponent .
+22. how to pass data in NavigationComponent is still not working. so please check what's the problem. because we need to when user goto /browser and if is not authenticated than we need to send back in login page with location data. so we can pass that and push in /browse path after login.
+23. make authChangeListner which see the changes of login and logout state , which set localstorage. so protected router.
