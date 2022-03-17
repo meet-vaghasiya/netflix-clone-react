@@ -7,6 +7,7 @@ import {
   Dropdown,
   Picture,
   Link,
+  GuideText,
   Search,
   Profile,
   FeatureCallOut,
@@ -73,6 +74,9 @@ Header.Search = function HeaderSearch({
 
 Header.Profile = function HeaderProfile({ children, ...restProps }) {
   return <Profile {...restProps}>{children}</Profile>;
+};
+Header.GuideText = function HeaderProfile({ children, ...restProps }) {
+  return <GuideText {...restProps}>{children}</GuideText>;
 };
 
 Header.Feature = function HeaderFeature({ children, ...restProps }) {

@@ -11,6 +11,10 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
   }
+  @media (max-width: 500px) {
+    max-width: 80%;
+    margin: auto;
+  }
 `;
 
 export const Input = styled.input`

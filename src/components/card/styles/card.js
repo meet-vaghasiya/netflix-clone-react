@@ -31,6 +31,8 @@ export const Group = styled.div`
     flexDirection === "row" ? "row" : "column"};
   ${({ alignItems }) => alignItems && `align-items: ${alignItems}`};
   ${({ margin }) => margin && `margin: ${margin}`};
+  padding-left: 30px;
+  padding-right: 30px;
 
   > ${Container}:first-of-type {
     @media (min-width: 1100px) {
@@ -60,8 +62,20 @@ export const Text = styled.p`
 `;
 
 export const Entities = styled.div`
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  gap: 20px;
+  margin-bottom: 20px;
+  grid-template-columns: repeat(5, 1fr);
+
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: 750px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export const Meta = styled.div`
@@ -102,21 +116,10 @@ export const Item = styled.div`
     }
   }
 
-  &:first-of-type {
-    margin-left: 56px;
-
-    @media (max-width: 1000px) {
-      margin-left: 30px;
-    }
+ 
   }
 
-  &:last-of-type {
-    margin-right: 56px;
 
-    @media (max-width: 1000px) {
-      margin-right: 30px;
-    }
-  }
 `;
 
 export const FeatureText = styled.p`

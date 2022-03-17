@@ -14,6 +14,9 @@ export function SelectProfileContainer({ user, setProfile }) {
 
       <Profiles>
         <Profiles.Title>Who's watching?</Profiles.Title>
+        <Header.GuideText>
+          Click your account(click below image)
+        </Header.GuideText>
         <Profiles.List>
           <Profiles.User
             onClick={() =>

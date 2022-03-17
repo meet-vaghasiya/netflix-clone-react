@@ -34,6 +34,10 @@ export const Container = styled.div`
   @media (max-width: 1000px) {
     margin: 0 30px;
   }
+  @media (max-width: 700px) {
+    flex-direction: ${({ page }) => (page === "browse" ? "column" : "")};
+    margin-bottom: 50px;
+  }
 `;
 
 export const Link = styled.p`
@@ -82,10 +86,6 @@ export const Search = styled.div`
   svg {
     color: white;
     cursor: pointer;
-  }
-
-  @media (max-width: 700px) {
-    display: none;
   }
 `;
 
@@ -188,6 +188,14 @@ export const Profile = styled.div`
     display: flex;
     flex-direction: column;
   }
+`;
+
+export const GuideText = styled.p`
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  color: white;
+  margin-bottom: 30px;
 `;
 
 export const Feature = styled(Container)`

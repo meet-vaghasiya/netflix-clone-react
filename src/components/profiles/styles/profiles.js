@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro';
+import styled from "styled-components/macro";
 
 export const Container = styled.div`
   display: flex;
@@ -15,6 +15,7 @@ export const Title = styled.h1`
   font-size: 48px;
   text-align: center;
   font-weight: 500;
+  margin-bottom: 10px;
 `;
 
 export const List = styled.ul`

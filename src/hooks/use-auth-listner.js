@@ -19,6 +19,5 @@ export default function useAuthListener() {
     });
     return () => listener();
   }, []);
-  console.log(user, "user-auth-listenr");
   return { user };
 }
