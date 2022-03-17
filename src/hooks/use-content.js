@@ -1,5 +1,4 @@
-import { useContext, useEffect, useState } from "react";
-import { FirebaseContext } from "../context/firebase";
+import { useEffect, useState } from "react";
 import { firebase } from "../lib/firebase.prod";
 
 const useContent = (collectionName) => {
@@ -10,10 +9,9 @@ const useContent = (collectionName) => {
       .firestore()
       .collection(collectionName)
       .get()
-
       .then((snapshot) => {
         const contentData = snapshot.docs.map((doc) => ({
-          ...doc,
+          ...doc.data(),
           docId: doc.id,
         }));
         setContent(contentData);

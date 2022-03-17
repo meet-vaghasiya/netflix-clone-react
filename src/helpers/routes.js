@@ -5,15 +5,14 @@ import { UseAuthListener } from "../hooks";
 
 export function IsUserRedirect({ Component }) {
   const auth = UseAuthListener();
-
-  return auth ? <Navigate to={ROUTE.BROWSE} /> : Component;
+  return auth.user ? <Navigate to={ROUTE.BROWSE} /> : Component;
 }
 
 export function ProtectedRoute({ Component }) {
   const auth = UseAuthListener();
   let location = useLocation();
 
-  return auth ? (
+  return auth.user ? (
     Component
   ) : (
     <Navigate to={ROUTE.SIGN_IN} state={{ from: location }} />
